@@ -1,4 +1,4 @@
-## Welcome Wallygator
+## Welcome to Wallygator
 
 This is a vanity page for my [Safecoin](https://safecoin.org) validator whose name is Wallygator.  
 
