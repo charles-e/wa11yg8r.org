@@ -1,37 +1,10 @@
-## Welcome to GitHub Pages
+## Welcome Wallygator
 
-You can use the [editor on GitHub](https://github.com/charles-e/wallygator/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This is a vanity page for my [Safecoin](https://safecoin.org) validator whose name is Wallygator.  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This website is the online equivalent of passing the hat.   Please stake my validator whose pubkey is `BHSX2WERLf4c7XAQcJSzeYyEva6vf5crVYjh2D7kSn14`
 
-### Markdown
+As is customary when passing the hat you need to have performed something to entertain or elucidate.  To that end I do have some basic helpful documents that are worth putting up here.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* [My notes on validator setup](Accounts.md) meant to accompany the [basic validator setup document](https://safecoin.org/validator-set-up-instructions/).
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/charles-e/wallygator/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
