@@ -2,7 +2,6 @@
 
 This is a vanity/busking page for my [Safecoin](https://safecoin.org) validator whose name is Wallygator.  
 
-
 Please [stake Stake STAKE!!!](https://stake.safecoin.org/#/) Wallygator Validator whose pubkey is `BHSX2WERLf4c7XAQcJSzeYyEva6vf5crVYjh2D7kSn14`.
 
 ## Nuggets of Content

@@ -19,7 +19,7 @@ Couple of points: First, yes that's "Wa11y" with two ones, because "1" and "l" b
 
 Your read that correctly: 37 hours (to search 17,738,000,000 (almost 18 billion) keypairs)
 
-Why can it take so long?  Note that I used the word "can" not "does."  It *can* take a while because its simply random chance: The program is literally generating ("grinding") random pubkey pairs with over and over again until the keypair's pubkey actually matches your desired string of characters.  Just to *grind* the point home: a pubkey has 128 bits of randomness, which is a very big roulette wheel to spin.
+Why can it take so long?  Note that I used the word "can" not "does."  It *can* take a while because its simply random chance: The program is literally generating ("grinding") random pubkey pairs over and over again until the keypair's pubkey matches your desired string of characters.  Just to *grind* the point home: a pubkey has 128 bits of randomness, which is a very big roulette wheel to spin.
 
 So how do you possibly speed this up?
 * Use a short match.  Matching `--starts-with Wa:1` happens nearly instantly, matching `--starts-with Wa1:1` took 11 seconds and `Wa11` took almost half an hour on my three-year-old macbook pro. Beyond that length you might want to get some coffee and come back many minutes/hours later...
