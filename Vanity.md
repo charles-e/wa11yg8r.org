@@ -32,7 +32,7 @@ So how do you possibly speed this up?
 
 * use `--starts-with` (or `--ends-with`) as many times as you can!  Thats legal.  So going back to "Wally" I could have further improved my odds of a match by allowing 'L' instead of '1'.  Actually, after a little thought I came up with the following to maximally broaden my match:
 ```
-  ❯ safecoin-keygen grind --starts-with Wa11y:1 --starts-with WaL1y:1 --starts-with Wa1Ly:1 --starts-with WaLLy:1
+  ❯ safecoin-keygen grind --starts-with Wa11y:1 --starts-with WaL1y:1 --starts-with Wa1Ly:1 --starts-with WaLLy:1 --ignore-case
   Searching with 8 threads for:
 	1 pubkey that starts with 'Wa11y' and ends with ''
 	1 pubkey that starts with 'WaL1y' and ends with ''
