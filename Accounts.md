@@ -112,7 +112,7 @@ Lastly, if you run the `safecoin account` command on a stake account the importa
 ```
 Owner: Stake11111111111111111111111111111111111111
 ```
-The "owner" is the Stake program which governs all the rules and activities sketched out in this document.
+The "owner" is the Stake program that governs all the staking-related rules and activities sketched out in this document.
 
 ### Accounts Galore!
 
