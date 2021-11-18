@@ -15,14 +15,14 @@ Searched 17738000000 keypairs in 134260s. 0 matches found.
 Wrote keypair to Wa11ysC4xguKmaSERxA9asHH6Bex2o3uWHFex1C27eu.json
 ```
 
-Couple of points: First, yes that's "Wa11y" with two ones, because "1" and "l" because visual ambiguity is not allowed with public keys (per the bs58 "standard")[https://bitcoin.stackexchange.com/questions/75527/eli5-what-is-base58check-encoding].  Second, I really did that and it took a *while*!!! More than 37 hours on my 8 core modern linux development box.
+Couple of points: First, yes that's "Wa11y" with two ones, because "1" and "l" because visual ambiguity is not allowed with public keys [per the bs58 "standard"](https://bitcoin.stackexchange.com/questions/75527/eli5-what-is-base58check-encoding).  Second, I really did that and it took a *while*!!! More than 37 hours on my 8 core modern linux development box.
 
 Your read that correctly: 37 hours (to search 17,738,000,000 (almost 18 billion) keypairs)
 
 Why can it take so long?  Note that I used the word "can" not "does."  It *can* take a while because its simply random chance: The program is literally generating ("grinding") random pubkey pairs with over and over again until the keypair's pubkey actually matches your desired string of characters.  Just to *grind* the point home: a pubkey has 128 bits of randomness, which is a very big roulette wheel to spin.
 
 So how do you possibly speed this up?
-* Use a short match.  Matching `--starts-with Wa:1` happens nearly instantly, matching `--starts-with Wa1:1` took 11 seconds.  Beyond that length you might want to get some coffee and come back many minutes/hours later...
+* Use a short match.  Matching `--starts-with Wa:1` happens nearly instantly, matching `--starts-with Wa1:1` took 11 seconds and `Wa11` took almost half an hour on my three-year-old macbook pro. Beyond that length you might want to get some coffee and come back many minutes/hours later...
 
 * Use a really fast computer with many cores.  By default the program uses 8 parallel threads to go eight times faster than a single thread if you have more than 8 cores its worth it to use the `--threads` option set to however many cores your hardware uses.
 
@@ -47,6 +47,7 @@ So grinding is the *only* way to get a vanity keypair.  You might want a vanity 
 In conclusion, the moral of this article (the *key* take-away, if you will) could be:
 
 ##### With great vanity comes great cost.
+
 
 If you want that cool, neato, keen five (*possibly* six) character string in your pubkey then you are looking at a program execution time that can be measured in days. That little extra time you spend optimizing your key grinding is probably worth it.
 
