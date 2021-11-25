@@ -9,6 +9,7 @@ As is customary when passing the hat you need to have performed something to ent
 
 * [My notes on validator setup](Accounts.md) meant to accompany the [basic validator setup document](https://safecoin.org/validator-set-up-instructions/).
 * [Notes on creating a vanity pubkey](Vanity.md) using `safecoin-keygen`.
+* [ELI5: Safecoin Improved Consensus](Consensus.md).
 
 ## About Me
 My name is Charles, I am retired and old enough to remember crappy Hanna-Barbera cartoons from the 1960s. I came to the Safecoin project after hearing about Solana but not having $100,000 (realistically IHMO) to devote to putting a validator into their cluster. 
