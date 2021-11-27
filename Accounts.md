@@ -69,7 +69,7 @@ Anyway, good way to understand the vote account is to consider what activities y
 
 * Withdraw funds.  There is a specific command to do this: `withdraw-from-vote-account`. Executing this command requires the withdraw authority account's wallet (not just the pubkey that we provided in the ```create-vote-account``` command).
 
-* Change the authorized withdrawer authority.  Our default vote account sets the authorized withdrawer to the identity account and his is probably what you want for now. But for security risk management you will eventually need to use a separate withdrawer account that you don't store on the validator.
+* Change the authorized withdrawer authority.  
 
 * Change the vote authority, The default vote authority is the validator identity account.  Describing the when, why and how of this is beyond the scope of this article. 
 
