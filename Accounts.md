@@ -5,7 +5,7 @@
 
 The basic instructions to create validator are available [here](https://safecoin.org/validator-set-up-instructions/). But I went through those instructions and, while they get the job done, at the end of the process I still had many nagging questions.  So this verbiage expands on those directions and hopefully adds useful context, tidbits and tips so the directions are a little more satisfying.  Like, for example, what are the results of following those directions?  This is what things look like once you have completed the steps:
 
-![Validator Setup Results](Summary.png)
+![Validator Setup Results](img/Summary2.png)
 
 ### Identity Account (Validator ID)
 
@@ -58,18 +58,18 @@ Although nn theory, the identity account is all you need to run a validator, in 
 The vote account is much more interesting and complicated than the Id account.  First of all, "Vote" is sort of a misnomer; what the vote account actually does is to aggregate stake.  Voting only matters to the extent that the voter has been staked.  So the vote account is the destination for stakes and when the validator votes it dedicates the total stake to the vote.  So the vote account represents (is the delegate for) stake which means money and power.  *But* the actual task of voting (that is, signing the votes) is performed by the "authorized voter" account and who is that?
 In the basic setup, we used the command:
 ```
-safecoin create-vote-account vote.json id.json
+safecoin create-vote-account vote.json id.json <withrawer pubkey>
 ```
 
-that command says that the vote account's authorized voter is the second parameter, which in this case is the id account.  ...so the vote account "votes" but it does not sign the votes and it does not pay for the votes, both of those tasks are performed by the validator (it's id account) it's role is sort of symbolic (maybe like the Queen of England, important but not really functional). 
+that command says that the vote account's authorized voter is the second parameter, which in this case is the id account.  ...so the vote account "votes" but it does not sign the votes and it does not pay for the votes, both of those tasks are performed by the validator (it's id account) it's role is sort of symbolic (maybe like the Queen of England, important but not really functional).  The last parameter assigns the ability to withraw to yet another account.
 
 Anyway, good way to understand the vote account is to consider what activities you can do to/with it.
 
 * Change its commission.  The vote account receives rewards for voting based on the commission (as a percent 0-100) it sets.  The commission is charged against the rewards received by stakers at the end of each epoch.  Our default voter account has a zero percent commission but you can change that with the command `update-vote-commission` 
 
-* Change the authorized withdrawer (the account needed to move safecoin out of the vote account.) Our default vote account sets the authorized withdrawer to the identity account and his is probably what you want for now. But for security risk management you will eventually need to use a separate withdrawer account that you don't store on the validator.
+* Withdraw funds.  There is a specific command to do this: `withdraw-from-vote-account`. Executing this command requires the withdraw authority account's wallet (not just the pubkey that we provided in the ```create-vote-account``` command).
 
-* Withdraw funds.  There is a specific command to do this `withdraw-from-vote-account` and to use that command you need access to the authorizer withdrawer's private key.  
+* Change the authorized withdrawer authority.  Our default vote account sets the authorized withdrawer to the identity account and his is probably what you want for now. But for security risk management you will eventually need to use a separate withdrawer account that you don't store on the validator.
 
 * Change the vote authority, The default vote authority is the validator identity account.  Describing the when, why and how of this is beyond the scope of this article. 
 
