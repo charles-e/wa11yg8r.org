@@ -18,7 +18,7 @@
 ||SPL Shared Memory|shmem4EWT2sPdVGvTZCzXXRAURL9G5vpPxNwSeKhHUL||Fair-Exchange/safecoin-program-library||
 ||Stake Pool|SPoo1xuN9wGpxNjGnPNbRPtpQ7mHgKM8d9BeFC549Jy|SPL Math|Fair-Exchange/safecoin-program-library||
 ||Themis Ristretto|C8tR6A3CWcEL46KHx7TJcbyR4hdoPi1wrBBQa42FuJMF||Fair-Exchange/safecoin-program-library||
-||Safe Token (current)|GDvGFZwYst1iH8Tixfuttz93cn6vJAZkUJoT539RJyVG||Fair-Exchange/safecoin-program-library||
+||Safe Token (current)|ToKLx75MGim1d1jRusuVX8xvdvvbSDESVaNXpRA9PHN||Fair-Exchange/safecoin-program-library||
 ||Token Lending|LENeX3L4CE1euBZp4zUNuicLP2SUZCbgXYZgBpZ9hWZ|SPL Math, Safe Token|Fair-Exchange/safecoin-program-library||
 ||Token Swap|SWPUnynS7FHA1koTbvmRktQgCDs7Tf4RkqwH19e2qSP|Safe Token|Fair-Exchange/safecoin-program-library||
 ||Feature Proposal|FEAj1Fwb2c9Kx9uHLGB2WH4Qhp2vACsJoudMVYHfE3ek|Safe Token|Fair-Exchange/safecoin-program-library||
