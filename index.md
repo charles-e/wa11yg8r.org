@@ -1,6 +1,6 @@
 
-* [wait but why](waitbutwhy.com) 
-* [epsilon theory](epsilontheory.com) 
+* [wait but why](https://waitbutwhy.com) 
+* [epsilon theory](https://epsilontheory.com) 
 
 ## Why Wallygator?
 Possible answers:
